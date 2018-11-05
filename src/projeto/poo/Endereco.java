@@ -19,12 +19,12 @@ public class Endereco {
 		int numero;
 		System.out.println("Digite a rua:");
 		rua = Leitura.lerString();
-		System.out.println("Digite o número:");
+		System.out.println("Digite o nï¿½mero:");
 		numero = Leitura.lerInt();
 		System.out.println("Digite o CEP: (Ex: 00000-000)");
 		cep = Leitura.lerString();
 		if (!Utilitaria.validarCep(cep)) {
-			System.out.println("CEP inválido!\nDigite o endereço novamente: \n");
+			System.out.println("CEP invï¿½lido!\nDigite o endereï¿½o novamente: \n");
 			return criar();
 		}
 		System.out.println("Digite a cidade:");
@@ -32,7 +32,7 @@ public class Endereco {
 		System.out.println("Digite o estado: (Ex: PR)");
 		estado = Leitura.lerString();
 		if (!Utilitaria.validarEstado(estado)) {
-			System.out.println("Estado inválido!\nDigite o endereço novamente: \n");
+			System.out.println("Estado invï¿½lido!\nDigite o endereï¿½o novamente: \n");
 			return criar();
 		}
 		return new Endereco(rua, numero, cep, cidade, estado);

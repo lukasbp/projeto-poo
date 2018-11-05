@@ -1,4 +1,6 @@
-package projeto.poo;
+package projeto.poo.cliente;
+
+import projeto.poo.Endereco;
 
 public class Cliente {
 

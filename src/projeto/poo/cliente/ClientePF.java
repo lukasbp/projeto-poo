@@ -1,4 +1,8 @@
-package projeto.poo;
+package projeto.poo.cliente;
+
+import projeto.poo.Endereco;
+import projeto.poo.Leitura;
+import projeto.poo.Utilitaria;
 
 public class ClientePF extends Cliente {
 
@@ -8,7 +12,7 @@ public class ClientePF extends Cliente {
 		super(nome, fone, endereco);
 		this.cpf = cpf;
 	}
-
+	
 	public static ClientePF criar() {
 		String nome, cpf, fone;
 		Endereco e;
@@ -17,7 +21,7 @@ public class ClientePF extends Cliente {
 		System.out.println("Digite o CPF: (Ex: 000.000.000-00)");
 		cpf = Leitura.lerString();
 		if (!Utilitaria.validarCpf(cpf)) {
-			System.out.println("CPF inválido!\nDigite o cliente novamente:\n");
+			System.out.println("CPF invï¿½lido!\nDigite o cliente novamente:\n");
 			return criar();
 		}
 		System.out.println("Digite o telefone:");

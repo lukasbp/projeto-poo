@@ -1,4 +1,8 @@
-package projeto.poo;
+package projeto.poo.cliente;
+
+import projeto.poo.Endereco;
+import projeto.poo.Leitura;
+import projeto.poo.Utilitaria;
 
 public class ClientePJ extends Cliente {
 
@@ -18,7 +22,7 @@ public class ClientePJ extends Cliente {
 		System.out.println("Digite o CNPJ: (Ex: 00.000.000/0000-00)");
 		cnpj = Leitura.lerString();
 		if (!Utilitaria.validarCnpj(cnpj)) {
-			System.out.println("CNPJ inválido!\nDigite o cliente novamente:\n");
+			System.out.println("CNPJ invï¿½lido!\nDigite o cliente novamente:\n");
 			return criar();
 		}
 		System.out.println("Digite o nome do motorista:");
